@@ -1,0 +1,285 @@
+:root {
+    /* Кольори макету */
+
+    --main-clr: #2196F3;
+    --dark-clr: #2F303A;
+    --light-clr: #F5F5F5;
+    --light-grey-clr: #F5F4FA;
+    --grey-txt-clr: #757575;
+    --dark-txt-clr: #212121;
+    --light-txt-clr: #FFFFFF;
+    --foot-grey-clr: rgba(255, 255, 255, 0.6);
+    --dark-clr: #000000;
+
+
+    /* Шрифти макету */
+
+    --main-font: 'Roboto',
+        sans-serif;
+    --logo-font: 'Raleway',
+        sans-serif;
+
+
+}
+
+.main {
+    font-family: var(--main-font);
+}
+
+
+
+/* Початок nav */
+
+.logo {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--dark-clr);
+    text-decoration: none;
+    list-style: none;
+}
+
+.web {
+    color: var(--main-clr);
+
+
+}
+
+.header {
+    background-color: var(--light-txt-clr);
+}
+
+.header-list {
+    color: var(--dark-txt-clr);
+    list-style: none;
+}
+
+
+
+.nav-studio {
+    list-style: none;
+    font-family: var(--dark-clr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--dark-txt-clr);
+    text-decoration: none;
+}
+
+.nav-studio:hover {
+    color: var(--main-clr);
+}
+
+/* Кінець nav */
+
+/* Початок контактів */
+
+.header-item {
+    list-style: none;
+    font-family: var(--dark-clr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-clr);
+    text-decoration: none;
+}
+
+.header-item:hover {
+    color: var(--main-clr);
+}
+
+/* Кінець контактів */
+
+
+
+/* Початок основного контенту */
+
+
+/* Герой */
+.hero {
+    background-color: var(--dark-clr);
+}
+
+.hero-title {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-txt-clr);
+}
+
+.hero-btn {
+    background-color: var(--main-clr);
+    color: var(--light-txt-clr);
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Герой кінець */
+
+/* Перелік гарних рис */
+
+.ideology-title {
+    display: none;
+}
+
+.caution {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-txt-clr);
+}
+
+.ideology-list {
+    list-style: none;
+}
+
+.ideology-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}
+
+/* Кінець гарних рис */
+
+
+/* Чим займаємося */
+
+.title-images {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-txt-clr);
+}
+
+.images-list {
+    list-style: none;
+}
+
+/* Кінець чим займаємося */
+
+
+/* Люди в команді */
+
+.team {
+    background-color: var(--light-grey-clr);
+}
+
+.team-list {
+    list-style: none;
+}
+
+.team-name {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-txt-clr);
+}
+
+.team-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}
+
+/* кінець люди в команді */
+
+
+/* Футер початок */
+
+.footer {
+    background-color: var(--dark-clr);
+}
+
+.footer-logo {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--light-txt-clr);
+    list-style: none;
+    text-decoration: none;
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.address-map {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--light-txt-clr);
+    text-decoration: none;
+}
+
+.address-tel,
+.address-mail {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--foot-grey-clr);
+    text-decoration: none;
+}
+
+.address-tel:hover,
+.address-mail:hover,
+.address-map:hover {
+    color: var(--main-clr);
+}
+
+/* Кінець футеру */
+
+
+
+
+
+/* ПОРТФОЛІО */

@@ -2,7 +2,7 @@
     /* Кольори макету */
 
     --main-clr: #2196F3;
-    --dark-clr: #2F303A;
+    --dark-clr: #2F313A;
     --light-clr: #F5F5F5;
     --light-grey-clr: #F5F4FA;
     --grey-txt-clr: #757575;
@@ -24,18 +24,20 @@
 
 .main {
     font-family: var(--main-font);
+    font-style: normal;
 }
 
 
 
 /* Початок nav */
 
-.logo {
+.logo,
+.logo:focus {
     font-family: var(--logo-font);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--dark-clr);
     text-decoration: none;
@@ -52,7 +54,8 @@
     background-color: var(--light-txt-clr);
 }
 
-.header-list {
+.header-list,
+.header-list:focus {
     color: var(--dark-txt-clr);
     list-style: none;
 }
@@ -61,17 +64,17 @@
 
 .nav-studio {
     list-style: none;
-    font-family: var(--dark-clr);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--dark-txt-clr);
     text-decoration: none;
 }
 
-.nav-studio:hover {
+.nav-studio:hover,
+.nav-studio:focus {
     color: var(--main-clr);
 }
 
@@ -81,17 +84,17 @@
 
 .header-item {
     list-style: none;
-    font-family: var(--dark-clr);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--grey-txt-clr);
     text-decoration: none;
 }
 
-.header-item:hover {
+.header-item:hover,
+.header-item:focus {
     color: var(--main-clr);
 }
 
@@ -108,11 +111,10 @@
 }
 
 .hero-title {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -123,11 +125,10 @@
     background-color: var(--main-clr);
     color: var(--light-txt-clr);
     cursor: pointer;
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30 / 16);
     display: flex;
     align-items: center;
     text-align: center;
@@ -143,11 +144,10 @@
 }
 
 .caution {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark-txt-clr);
@@ -158,11 +158,8 @@
 }
 
 .ideology-text {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
 }
@@ -173,11 +170,10 @@
 /* Чим займаємося */
 
 .title-images {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-txt-clr);
@@ -201,22 +197,18 @@
 }
 
 .team-name {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-txt-clr);
 }
 
 .team-text {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
@@ -236,7 +228,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--light-txt-clr);
     list-style: none;
@@ -248,11 +240,10 @@
 }
 
 .address-map {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--light-txt-clr);
     text-decoration: none;
@@ -260,11 +251,10 @@
 
 .address-tel,
 .address-mail {
-    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--foot-grey-clr);
     text-decoration: none;
@@ -272,7 +262,10 @@
 
 .address-tel:hover,
 .address-mail:hover,
-.address-map:hover {
+.address-map:hover,
+.address-tel:focus,
+.address-mail:focus,
+.address-map:focus {
     color: var(--main-clr);
 }
 
@@ -283,3 +276,52 @@
 
 
 /* ПОРТФОЛІО */
+
+
+.port-title {
+    display: none;
+}
+
+.port-btns {
+    list-style: none;
+}
+
+.port-btn {
+    cursor: pointer;
+    background-color: var(--light-grey-clr);
+    color: var(--dark-txt-clr);
+    border: 0;
+}
+
+.port-btn:hover,
+.port-btn:focus {
+    background-color: var(--main-clr);
+    color: var(--light-txt-clr);
+
+}
+
+
+.port-item {
+    list-style: none;
+}
+
+.port-link,
+.port-link:focus {
+    text-decoration: none;
+}
+
+.port-titles {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--dark-txt-clr)
+}
+
+.port-text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}

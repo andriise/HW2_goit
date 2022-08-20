@@ -2,7 +2,7 @@
     /* Кольори макету */
 
     --main-clr: #2196F3;
-    --dark-clr: #2F313A;
+    --dark-grey-clr: #2F313A;
     --light-clr: #F5F5F5;
     --light-grey-clr: #F5F4FA;
     --grey-txt-clr: #757575;
@@ -10,6 +10,7 @@
     --light-txt-clr: #FFFFFF;
     --foot-grey-clr: rgba(255, 255, 255, 0.6);
     --dark-clr: #000000;
+    --btn-active: #188CE8;
 
 
     /* Шрифти макету */
@@ -24,7 +25,7 @@
 
 .main {
     font-family: var(--main-font);
-    font-style: normal;
+    color: var(--dark-txt-clr);
 }
 
 
@@ -34,7 +35,6 @@
 .logo,
 .logo:focus {
     font-family: var(--logo-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -44,37 +44,48 @@
     list-style: none;
 }
 
+
+
 .web {
     color: var(--main-clr);
 
-
 }
+
+/* Початок шапки */
 
 .header {
     background-color: var(--light-txt-clr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
 }
 
 .header-list,
 .header-list:focus {
-    color: var(--dark-txt-clr);
     list-style: none;
 }
 
 
 
-.nav-studio {
+.nav-list {
     list-style: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--dark-txt-clr);
+}
+
+.nav-studio {
+
     text-decoration: none;
+    color: inherit;
 }
 
 .nav-studio:hover,
 .nav-studio:focus {
+    color: var(--main-clr);
+}
+
+.current {
     color: var(--main-clr);
 }
 
@@ -84,7 +95,6 @@
 
 .header-item {
     list-style: none;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -107,11 +117,10 @@
 
 /* Герой */
 .hero {
-    background-color: var(--dark-clr);
+    background-color: var(--dark-grey-clr);
 }
 
 .hero-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -125,7 +134,6 @@
     background-color: var(--main-clr);
     color: var(--light-txt-clr);
     cursor: pointer;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -133,6 +141,10 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+}
+
+.hero-btn:hover {
+    background-color: var(--btn-active);
 }
 
 /* Герой кінець */
@@ -144,13 +156,11 @@
 }
 
 .caution {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--dark-txt-clr);
 }
 
 .ideology-list {
@@ -170,13 +180,11 @@
 /* Чим займаємося */
 
 .title-images {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--dark-txt-clr);
 }
 
 .images-list {
@@ -197,13 +205,11 @@
 }
 
 .team-name {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--dark-txt-clr);
 }
 
 .team-text {
@@ -220,12 +226,11 @@
 /* Футер початок */
 
 .footer {
-    background-color: var(--dark-clr);
+    background-color: var(--dark-grey-clr);
 }
 
 .footer-logo {
     font-family: var(--logo-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -235,29 +240,32 @@
     text-decoration: none;
 }
 
-.address-list {
-    font-style: normal;
-}
+
 
 .address-map {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--light-txt-clr);
     text-decoration: none;
+    font-style: normal;
 }
 
 .address-tel,
 .address-mail {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--foot-grey-clr);
     text-decoration: none;
+    font-style: normal;
+
+}
+
+.address-list {
+    list-style: none;
 }
 
 .address-tel:hover,
@@ -267,6 +275,7 @@
 .address-mail:focus,
 .address-map:focus {
     color: var(--main-clr);
+
 }
 
 /* Кінець футеру */
@@ -289,8 +298,14 @@
 .port-btn {
     cursor: pointer;
     background-color: var(--light-grey-clr);
-    color: var(--dark-txt-clr);
     border: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .port-btn:hover,
@@ -308,6 +323,7 @@
 .port-link,
 .port-link:focus {
     text-decoration: none;
+    color: inherit;
 }
 
 .port-titles {
@@ -316,7 +332,6 @@
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    color: var(--dark-txt-clr)
 }
 
 .port-text {
